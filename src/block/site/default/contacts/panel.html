@@ -1,0 +1,56 @@
+<div class="{{contacts_prefix}}block  {{contacts_mod}}">
+	<div class="{{contacts_prefix}}inner  {{contacts_mod}}"> 
+		<div class="{{contacts_prefix}}container container"> 
+			[[azbntple  
+				tpl="/src/block/site/default/page-header/heading.html" 
+				header_prefix="page-header__" 
+				header_mod="{{block_heading_mod}}"
+				header_level="h2"
+				header="{{block_heading}}"
+			]]
+
+			<div class="{{contacts_prefix}}row row  is--wrap  is--gutter15">
+				<div class="{{contacts_prefix}}cols cols">
+					<div class="{{contacts_prefix}}item   is--address">
+						[[azbntple 
+							tpl="/src/block/site/default/contacts/item-icon.html" 
+							block_prefix="contact-item__"
+							block_mod="is--icon  is--nobg"
+							block_icon="contacts-location"
+							block_name="{{contacts.address}}" 
+						]]			
+					</div>	
+				</div>	
+				<div class="{{contacts_prefix}}cols cols">		
+					<div class="{{contacts_prefix}}item">
+						[[azbntple 
+							tpl="/src/block/site/default/contacts/item-icon-link.html" 
+							block_prefix="contact-item__"
+							block_mod="is--icon  is--nobg"
+							block_icon="contacts-email"
+							block_name="{{contacts.email}}"
+							block_link="mailto:{{contacts.email}}"
+							block_attr="  "
+						]]			
+					</div>
+				</div>
+				<div class="{{contacts_prefix}}cols cols">
+					<div class="{{contacts_prefix}}item">
+						[[azbntple 
+							tpl="/src/block/site/default/contacts/item-icon-link.html" 
+							block_prefix="contact-item__"
+							block_mod="is--icon  is--nobg"
+							block_icon="contacts-phone"
+							block_name="{{contacts.phone}}"
+							block_link="tel:{{contacts.phone_tel}}"
+							block_attr="  "
+						]]			
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="{{contacts_prefix}}map  {{contacts_mod}}">
+		<div class="{{contacts_prefix}}map-item" id="map-google"></div>
+	</div>
+</div>

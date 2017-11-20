@@ -1,0 +1,44 @@
+<header class="{{block_prefix}}block">
+	<div id="{{block_slider_id}}" class="{{block_prefix}}carousel carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+		<div class="carousel-inner {{block_prefix}}carousel-inner">
+			<div class="item {{block_prefix}}carousel-item  active">
+				<div class="{{block_prefix}}carousel-img"> 
+					<picture>
+						<source media="(min-width: 451px)" 
+								srcset="{{url-path-img}}/temp/header-slider-item1-1920x735.jpg">
+						<img src="http://via.placeholder.com/450x500" alt="">
+					</picture>	
+				</div>
+			</div>
+			<div class="item {{block_prefix}}carousel-item">
+				<div class="{{block_prefix}}carousel-img"> 
+					<picture>
+						<source media="(min-width: 451px)" 
+								srcset="{{url-path-img}}/temp/header-slider-item2-1920x735.jpg">
+						<img src="http://via.placeholder.com/450x500" alt="">
+					</picture>	
+				</div>
+			</div>
+			<div class="item {{block_prefix}}carousel-item">
+				<div class="{{block_prefix}}carousel-img"> 
+					<picture>
+						<source media="(min-width: 451px)" 
+								srcset="{{url-path-img}}/temp/header-slider-item3-1920x735.jpg">
+						<img src="http://via.placeholder.com/450x500" alt="">
+					</picture>	
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control {{block_prefix}}carousel-control btn__slider  is--center  is--prev" href="#{{block_slider_id}}" data-slide="prev">
+			[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="owl-prev" ]]
+		</a>
+		<a class="right carousel-control {{block_prefix}}carousel-control btn__slider  is--center  is--next" href="#{{block_slider_id}}" data-slide="next">
+			[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="owl-next" ]]
+		</a>
+		<ol class="carousel-indicators  btn__indicators-panel  is--header">
+			<li data-target="#{{block_slider_id}}" data-slide-to="0" class="btn__indicators-item  is--header active"></li>
+			<li data-target="#{{block_slider_id}}" data-slide-to="1" class="btn__indicators-item  is--header"></li>
+			<li data-target="#{{block_slider_id}}" data-slide-to="2" class="btn__indicators-item  is--header"></li>
+		</ol>
+	</div>
+</header>

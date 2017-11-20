@@ -1,0 +1,24 @@
+.header-block__{
+	&block{
+		position: relative;
+		@media @media-notsmart {
+			max-height: ~"calc(705px + 6vw)";
+			height: ~"calc(39vw + 6vw)";
+			padding-bottom: 6vw;
+			background-color: @white3;
+		}
+	}
+	&carousel{}
+	&carousel-control{
+		@media @media-screen {
+			opacity: 0;
+			.header-block__carousel:hover &{opacity: 1;}
+		}
+	}
+	&carousel-inner{}
+	&carousel-item{}
+	&carousel-img{
+		position: relative;
+		z-index: 1;		
+	}
+}

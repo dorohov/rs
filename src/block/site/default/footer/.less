@@ -1,0 +1,147 @@
+.footer__{
+	&block{
+		@media print{display: none;}
+		position: relative;
+		z-index: 1;
+		font-family: @footer-ff;
+		font-size: @footer-fs;
+		line-height: @footer-lh - 4px;
+		font-weight: 400;
+		color: @footer-color;	
+		background-color: @footer-bg;
+		overflow: hidden;
+		border-top: 2px solid @footer-bg;
+		border-bottom: 2px solid @footer-bg;
+		@media @media-size-xs-p{text-align: center;}
+		@media @media-size-xs {
+			font-size: @footer-fs - 2px;
+			line-height: @footer-lh - 6px;
+		}
+		@media @media-size-sml {
+			font-size: @footer-fs - 4px;
+			line-height: @footer-lh - 8px;
+		}
+		html.msie &{
+			background: @footer-bg;
+		}
+		a,
+		a[href^="tel:"],
+		a[href^="maito:"],
+		a:focus,
+		a[href^="tel:"]:focus,
+		a[href^="maito:"]:focus,
+		a:hover,
+		a[href^="tel:"]:hover,
+		a[href^="maito:"]:hover{
+			color: @footer-color;
+		}
+	}
+	&inner{
+		border-top: 3px solid @white;
+		border-bottom: 3px solid @white;
+		padding: 12px 0;
+	}
+	&container{}
+	&row{
+		justify-content: space-between;
+		align-items: center;
+		margin-top: -15px;
+		@media @media-size-xs-p{
+			//align-items: flex-start;
+		}
+		@media @media-device{flex-wrap: wrap;}
+	}
+	&cols{
+		padding-top: 15px;
+		&.is--copyright{}
+		&.is--contacts{
+			@media @media-size-xs-l {
+				max-width: 230px;
+			}
+		}
+		&.is--dorohovdesign{
+			@media @media-device {
+				max-width: 133px;
+			}
+			@media @media-size-xs-l {
+				//.makeCols(12, 12);
+			}
+		}
+	}
+	&copyright-row{
+		align-items: center;
+	}
+	&copyright-cols{
+		&.is--copyright{
+			@media @media-device {display: none;} 			
+		}
+	}
+	&copyright{
+		font-size: @footer-fs - 4;
+	}
+	&requisites{
+		font-weight: 700;
+	}
+	&logotip{
+		width: 100%;
+		max-width: 100px;
+		height: 65px;
+		display: block;
+	}
+	&contacts-row{}
+	&contacts-item{
+		position: relative;
+		padding-left: 35px;
+		display: inline-block;
+		span{font-weight: 700;}
+	}
+	&contacts-icon{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 24px;
+		height: 24px;
+		color: @b-color-a;
+	}
+	&dorohovdesign-row{
+		align-items: center;
+		margin-left: -5px;
+		margin-right: -5px;
+		justify-content: flex-end;
+		@media @media-device {
+			justify-content: center;
+			flex-wrap: wrap;
+		}  
+	}
+	&dorohovdesign-cols{
+		padding-left: 5px;
+		padding-right: 5px;
+		@media @media-device {.makeCols(12, 12);}
+		&.is--text{
+			text-align: right;
+		}
+	}
+	&dorohovdesign-text{
+		font-size: @b-fs - 7px;
+		line-height: @b-lh - 11px;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-left: auto;
+		color: @footer-color-hover;
+		@media @media-device{padding-bottom: 2px;}
+		@media @media-screen {max-width: 70px;}
+	}		
+	&dorohovdesign-logotip{		
+		border: none;
+		display: block;
+		width: 100px;
+		height: 35px;
+		margin:0 auto;
+		color: @footer-color-hover;
+		@media @media-size-xs {margin: 0 0 0 auto}
+		&:hover{
+			color: @footer-color-hover;
+		}	
+	}
+}

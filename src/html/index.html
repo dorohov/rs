@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="is--index-page"> 
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/.html"
+			class="navbar-site scroll"
+			navbar_prefix="navbar__"   
+			navbar_mod="  "     
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel.html"
+			block_prefix="header-block__"
+			block_slider_id="header-slider"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/advantages/panel.html"
+			block_prefix="advantages-panel__"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/products/panel-index.html"
+			block_prefix="products-panel__"
+			block_heading="Описание продукции"
+			block_heading_mod="is--heading  is--center  is--index-panel"
+			block_mod="is--index" 
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/form/panel.html" 
+			form_prefix="form-panel__"
+			form_mod="is--lg"
+			form_bg="{{url-path-img}}/bg/bg-form-panel.jpg"
+			form_mod_form="is--inline  is--cols-3" 
+			form_color="is--white"
+			form_heading="Отправить заявку на приобретение крема"
+			form_heading_small="  "
+			form_id="fcab" 
+			form_btn_name="Отправить"
+			form_btn_mod="is--form-inline"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/reviews/panel-index.html"
+			block_prefix="reviews-panel__" 
+			block_mod="is--index" 
+			block_heading="Отзывы"
+			block_heading_mod="is--heading  is--center  is--index-panel"
+		]]
+		[[azbntple  
+			tpl="/src/block/site/default/contacts/panel.html" 
+			contacts_prefix="contacts-panel__"     
+			contacts_mod="is--index" 
+			block_heading="Контакты"  
+			block_heading_mod="is--heading  is--center  is--contacts"   
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/footer/.html"
+			footer_prefix="footer__" 
+		]]		
+		[[azbntple 
+			tpl="/src/block/site/default/modals/order.html"
+			modals_prefix="modal-base__" 
+			modals_id="modal-order"
+			modals_mod="  "
+			modal_heading="Заказать продукт."
+			modal_heading_small="Наш менеджер свяжется с вами в скором времени."
+			modal_form_id="fmo"
+			modal_form_btn="Отправить"
+		]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]  
+		[[azbntple tpl="/src/block/site/default/script/owl.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/googleMap.html" ]]
+	</body>
+</html>

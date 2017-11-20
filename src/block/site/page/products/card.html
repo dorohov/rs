@@ -1,0 +1,32 @@
+<div class="content-block {{block_prefix}}content-block  {{bg_prefix}}block" role="main"> 
+	<div class="container content-block__container {{block_prefix}}container {{bg_prefix}}container">
+		[[azbntple 
+			tpl="8/src/block/site/default/breadcrumb/level1.html" 
+			bread_prefix="breadcrumb__"
+			bread_mod="is--heading  is--center"
+			level_1="{{block_heading}}" 
+		]]		
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading.html" 
+			header_prefix="page-header__" 
+			header_mod="is--heading  is--center"
+			header_level="h1"
+			header="{{block_heading}}"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/products/panel-card.html"
+			block_prefix="products-card-panel__" 
+			block_mod="  "
+			block_heading_small="{{block_heading_small}}" 
+			block_application="{{block_application}}" 
+			block_distributor="{{block_distributor}}" 
+			block_issue="{{block_issue}}" 
+			block_life="{{block_life}}" 
+		]]
+	</div>
+	[[azbntple 
+		tpl="/src/block/site/default/products/panel-card-note.html"
+		block_prefix="products-card-panel__" 
+		block_mod="  "
+	]]	
+</div>

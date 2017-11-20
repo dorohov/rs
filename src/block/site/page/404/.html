@@ -1,0 +1,27 @@
+<div class="content-block {{block_prefix}}content-block  {{bg_prefix}}block" role="main">
+	<div class="container {{block_prefix}}container content-block__container {{bg_prefix}}container">
+		<div class="text__container">		
+			[[azbntple 
+				tpl="/src/block/site/default/page-header/heading.html" 
+				header_prefix="page-header__" 
+				header_mod="is--heading  is--center"
+				header_level="h1"
+				header="{{block_heading}}"
+			]]
+			<div class="text__block  {{block_prefix}}text">
+				<p>Запрашиваемая Вами страница удалена или никогда не существовала.</p>
+			</div>
+			<div class="{{block_prefix}}btn">
+				<p>
+					[[azbntple 
+						tpl="/src/block/site/default/button/link.html"
+						button_prefix="btn__" 
+						button_mod=""
+						button_link="{{page.index}}"
+						button_name="Ha главную"
+					]] 
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
