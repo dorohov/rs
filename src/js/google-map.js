@@ -1,5 +1,5 @@
 function initMap() {     
-	var coordMapOfficeOne = {lat: 52.952442, lng: 36.065074},
+	var coordMapOfficeOne = {lat: 55.6640, lng: 37.7514},
 		zoomMapOfficeOne = 17,
 		styleMapOfficeOne = [{"featureType": "landscape.man_made","elementType": "geometry.fill","stylers": [{"color": "#ebe3cd"}]},{"featureType": "landscape.man_made","elementType": "geometry.stroke","stylers": [{"color": "#dfd2ae"}]},{"featureType": "poi","elementType": "geometry.fill","stylers": [{"color": "#dfd2ae"}]},{"featureType": "poi","elementType": "labels.text.fill","stylers": [{"color": "#a79893"}]},{"featureType": "road","elementType": "geometry.fill","stylers": [{"color": "#f5f1e6"}]},{"featureType": "road.highway","elementType": "geometry","stylers": [{"color": "#f5f1e6"}]},{"featureType": "road.highway","elementType": "geometry.fill","stylers": [{"color": "#f5f1e6"}]},{"featureType": "road.local","elementType": "labels.text.fill","stylers": [{"color": "#a79893"}]}],
 		optionsMapOfficeOne = {
@@ -23,7 +23,7 @@ function initMap() {
 	        strokeWeight: 0,
 	        scale: 0.25
 	    },*/
-	    iconCoordOfficeOne = {lat: 52.95209, lng: 36.065025}, 
+	    iconCoordOfficeOne = {lat: 55.663960, lng: 37.751826}, 
 	    OfficeOne = new google.maps.Marker({
 			position: iconCoordOfficeOne,
 			map: mapOfficeOne,
